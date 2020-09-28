@@ -1,0 +1,7 @@
+<dataset>
+
+    <receivers id="1" receivername="Соло" />
+    <receivers id="2" receivername="Корона"/>
+    <receivers id="3" receivername="МТС" />
+
+</dataset>

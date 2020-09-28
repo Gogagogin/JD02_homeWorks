@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet  author="a.veramkovich@gmail.com"  id="1.0">
+        <sql>
+
+            create table expenses (
+            id int PRIMARY KEY,
+            paydate date,
+            receiver int,
+            total float);
+
+            use hometaskdatabase_test;
+            create table receivers (
+            id int PRIMARY KEY ,
+            receivername varchar(255));
+
+
+        </sql>
+    </changeSet>
+
+
+</databaseChangeLog>
